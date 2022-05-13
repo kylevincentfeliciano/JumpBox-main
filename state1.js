@@ -278,7 +278,12 @@ var SceneOne = new Phaser.Class({
     //this.physics.add.overlap(player, jumpSigns, jumpNow, null, this);
     //this.physics.add.overlap(player, boxSigns, punchNow, null, this);
     //this.physics.add.overlap(player, enemies, punchChance, null, this);
-    this.physics.add.overlap(player, platforms, jumpFail, null, this);
+    //this.physics.add.overlap(player, platforms, jumpFail, null, this);
+
+    this.physics.add.overlap(player, doors, hitDoor, null, this);
+    this.physics.add.overlap(player, enemies, punchChance, null, this);
+    this.physics.add.overlap(player, jumpSigns, jumpNow, null, this);
+    this.physics.add.overlap(player, boxSigns, punchNow, null, this);
 
     
 
@@ -336,11 +341,8 @@ var SceneOne = new Phaser.Class({
       //this.scene.start('Lose');
     //});
 
-
-    this.physics.add.overlap(player, doors, hitDoor, null, this);
-    this.physics.add.overlap(player, enemies, punchChance, null, this);
-    this.physics.add.overlap(player, jumpSigns, jumpNow, null, this);
-    this.physics.add.overlap(player, boxSigns, punchNow, null, this);
+    
+    
   }
 });
 
