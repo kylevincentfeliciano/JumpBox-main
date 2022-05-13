@@ -285,7 +285,7 @@ var SceneOne = new Phaser.Class({
     this.physics.add.overlap(player, jumpSigns, jumpNow, null, this);
     this.physics.add.overlap(player, boxSigns, punchNow, null, this);
 
-    
+    //asd
 
     //jump.create(1000,275,"jumpSign");
     //jump.create(1100,275,"jumpSign");
